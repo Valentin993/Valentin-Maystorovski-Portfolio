@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <script>
+      // Fix sandboxed iframe environment fetch re-assignment errors
+      try {
+        var originalFetch = window.fetch;
+        var currentFetch = originalFetch;
+        var patchSuccess = false;
+
+        try {
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return currentFetch; },
+            set: function(val) { currentFetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+          patchSuccess = true;
+        } catch (e1) {
+          // Fallback to Window.prototype if direct window definition fails
+        }
+
+        if (!patchSuccess) {
+          try {
+            Object.defineProperty(Window.prototype, 'fetch', {
+              get: function() { return currentFetch; },
+              set: function(val) { currentFetch = val; },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e2) {
+            console.warn('Unable to patch fetch on Window.prototype:', e2);
+          }
+        }
+      } catch (e) {
+        console.warn('Unable to patch window.fetch:', e);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

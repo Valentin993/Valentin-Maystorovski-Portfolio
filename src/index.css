@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bodoni Moda", serif;
+  --font-sans: "Geist", sans-serif;
+  
+  /* Retain custom colors matching the dark studio persona */
+  --color-on-error: #690005;
+  --color-background: #0a0a0a;
+  --color-surface: #0a0a0a;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #131313;
+  --color-surface-container-high: #1a1a1a;
+  --color-surface-container-highest: #262626;
+  --color-on-background: #e5e2e1;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #a1a1aa;
+  --color-primary: #c9c6c5;
+  --color-on-primary: #1c1b1b;
+  --color-outline: #52525b;
+  --color-outline-variant: #27272a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+  color: #e5e2e1;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e5e2e1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Beautiful custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c6c5;
+}
+
+/* Elegant selection colors */
+::selection {
+  background-color: rgba(201, 198, 197, 0.3);
+  color: #ffffff;
+}
+
