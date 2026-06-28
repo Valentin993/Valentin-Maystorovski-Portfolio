@@ -1,8 +1,13 @@
 import { ProjectTeaser, CaseStudy, ServiceItem } from './types';
 import rareVoidCloseup from './assets/images/rare_void_closeup_1782087888815.jpg';
 import rareVoidBlackTshirt from './assets/images/rare_void_black_tshirt_1782088238559.jpg';
+import rareVoidHeroLaptop from './assets/images/rare_void_hero_laptop_1782685743916.jpg';
+import rareVoidWebpageShowcase from './assets/images/rare_void_webpage_showcase_1782686177665.jpg';
 import spectrumIconography from './assets/images/spectrum_iconography_text_1782088593539.jpg';
 import spectrumSpatialUrban from './assets/images/spectrum_spatial_urban_1782089242796.jpg';
+import spectrumGoldFoilIdentity from './assets/images/spectrum_gold_foil_identity_1782686527591.jpg';
+import spectrumDesignPhilosophy from './assets/images/spectrum_philosophy_refined_1782687361492.jpg';
+import spectrumMaterialsBar from './assets/images/spectrum_materials_bar_1782687249229.jpg';
 import ironEmberTactile from './assets/images/iron_ember_tactile_1782088830715.jpg';
 import ironEmberBurgerInterface from './assets/images/iron_ember_burger_interface_1782089084022.jpg';
 
@@ -113,7 +118,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     title: 'RARE_VOID',
     heroCategory: 'PROJECT CASE',
     tagline: 'Minimal hoodies inspired by underground culture, brutalism, and modern street fashion. Every piece stands as a tool of utility for the urban navigator.',
-    heroImage: 'https://lh3.googleusercontent.com/aida/AP1WRLvDqrqhPkDQ3DcXPjAcfo4R0Lgnk9rGm9SJTaGg9sPguNqFvvKF5BLf0SnK53KRFzKTAj2JRr7tD9AVQzfizn1B0ycCpJebCfRS44ySpA2H-Dz32DUstK_oAZmG2ShjF6ZbbiIS_nU8I3oXq7lMH7ud7MQeWeQ6vcD-nkHdFntA76dw74yTo13Y4r7c9h9uxtA16z7Qlwpi92jrvxWj8B4skj6eQkyqWg0bZQtKbQaTO0S1vbreM1vpP9ja',
+    heroImage: rareVoidHeroLaptop,
     deliverables: [
       'Digital Interface Design',
       'Brutal Streetwear Identity',
@@ -123,7 +128,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     headline: 'Brutal Streetwear',
     narrative: "Rare Void is an industrial streetwear label born from the intersection of architectural brutalism and utility-driven fashion. We designed an experience that mirrors the raw structural integrity of the garments. The visual language is aggressively minimal, stripping away superfluous detail to focus on form, high-density materials, and exact technical specifications.",
     tags: ['Industrial', 'Brutalism', 'Limited Release'],
-    showcaseImage: 'https://lh3.googleusercontent.com/aida/AP1WRLsXktsjm75eS5ssTERd8tcJF4GGJD1Hr_JaIujDNYljBAdEzhI_L7S4bJu4xbWh_Ac50qUSo9BcFeyWgfoRKsh-A764xOlF_A-Hu3-r8QN7igCzAS1uE5bvAmnSC-VLQxkqzOqXiZofwlgj_7zjiKUszm8Qv9wLSHYwIYfw-lj6Q9w-MXOouTUzTbXZxc5gG1QA4U-ivQXR5uR_FU1QULnqHYGK4XGsw_9JG0hk-91sjKeQUgaWiIo4HEl9',
+    showcaseImage: rareVoidWebpageShowcase,
     showcaseLabelUrl: 'https://rarevoid.vercel.app/',
     showcaseSubtitle: 'High-contrast lookbook with interactive grid navigation',
     philosophyTitle: 'Structural Integrity.',
@@ -163,12 +168,12 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     headline: 'The Essence of Nightlife',
     narrative: "Modern minimalist cocktail bar identity named SPECTRUM. The aesthetic is minimal, elegant, and timeless with refined typography and subtle Art Deco influences. We aimed to create a visual language that speaks to the elite, focusing on the interplay between light and shadow—much like the spectrum of colors found in a perfectly poured drink.",
     tags: ['Luxury', 'Berlin', 'Art Deco'],
-    showcaseImage: 'https://lh3.googleusercontent.com/aida/AP1WRLs-OASZyuuR4t2ejPDEl9DX_VMjBeQ_iSDRyBPdNk5UwDodJ1jfI9hEMMcp-5KIH8zzTshUHKdVePUDFJex2oJj7pNaQDmD7vwHJZmAC-H7unEEzEYg4e8KLpMJ95lvM7uSvoEo8DPiwF80UY-K0UQeQgtPqe4BaWm7IsKnDOqoUY2rth6JMQ9ZIkuEFWVjgu3x4eIVbdxtVxhvrt3RWxDmNhubzBNLnaZA6sC96l1vRSvYShT5fxl3hY8',
+    showcaseImage: spectrumGoldFoilIdentity,
     showcaseLabelUrl: '#',
     showcaseSubtitle: 'High-texture paper with gold-foil finish',
     philosophyTitle: 'Structural Minimalism.',
     philosophyText: "Every curve in the Spectrum logo is calculated to match the golden ratio, ensuring a balanced presence across both digital displays and embossed leather menus. We prioritized the 'S' glyph as a structural anchor that feels both architectural and organic.",
-    philosophyImage: 'https://lh3.googleusercontent.com/aida/AP1WRLvIBM8RU93Lo8i_AQ5H8S1ULRjDPXQPaPxvfobsR1QLUB7L4hH2GgpJ5zIsDmUZcZM2Bt-G6zYLxPLGxxNftMd2j9n4iPtaLPb5tVwR4WTK-knzdV77oJbIdZsoeMdsbi85bE71c3H9X9Vhu22xZ30WpYcSughLllxiDFXeLPCuT_uITjfR0ToygpCeaQ46UnZgLqseFG3xAsNaQs40oDnpOEZw3G-VOAnoj3z2_Tbhw4QMD5CANNO-zx-h',
+    philosophyImage: spectrumDesignPhilosophy,
     quote: "Creating a space where light becomes the main ingredient.",
     gallery: [
       {
@@ -179,7 +184,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
       {
         title: 'MATERIALS',
         subtitle: 'High tactile contrast representing raw metals and luxury leather binding.',
-        imageSrc: 'https://lh3.googleusercontent.com/aida/AP1WRLtJ8hWSGAEOgOD0t9SXkIga2s8M0w7wv5_FTQQLOM-DXAVkTyHgdZLxijPPIOnE4_no9Kw-w5fcxWmbEK2cqBIpxQujzGm4NVvlnXsZjEKI9XzZqHpmq72ZJnXMkF8OsSahskX5SmyiyN1MeiVTC_qaKs7dBOnC1JJ1wn8MgXxZeHgjesa7k1W83Nry08gljGpnlFReC0w4Z9sENpw4Wyryr1J_4ObkXHZ2vYZzXJj3UiQmsNwJj5mqNYFp'
+        imageSrc: spectrumMaterialsBar
       },
       {
         title: 'SPATIAL',

@@ -3,6 +3,7 @@ import { serviceIconMap } from './IconMapper';
 import { ViewState } from '../types';
 import { PROJECT_TEASERS, SERVICE_ITEMS, DESIGN_SKILLS, TECH_STACK } from '../data';
 import { ArrowRight } from 'lucide-react';
+import uxUiDevicesHero from '../assets/images/ux_ui_devices_hero_1782685431474.jpg';
 
 interface HomeViewProps {
   onViewChange: (view: ViewState, sectionId?: string) => void;
@@ -83,7 +84,8 @@ export default function HomeView({ onViewChange }: HomeViewProps) {
               <img
                 alt="Valentin Maystorovski Portfolio Key Visual"
                 className="w-full h-full object-cover grayscale contrast-[1.1] hover:contrast-100 transition-all duration-1000 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGK6lavI4el8hXLRg4r2jh0T_rr1Cz72fsSKVCm5ov_eCOX5ZhGgJ7hnoaRDgG58lJCNDNtaZdbU6gU08-mOiopaNXOsNtD0GtdVZC5ho1wFbS7pzkH40nCvS2ku_FCgfuUB1TVTRLXSn8q7n0giKLfcO0-djlpvOA1zSQ2UWHAb3TuHwO-LCftUJokrrTo_CiHmXHI5tKq8JC-2-mxjPp2zwf-sNztMQwSNox4zC8TMFFyKcN39jLACqSkTKD5ZwCzSnysAO8hVrr"
+                src={uxUiDevicesHero}
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-40"></div>
             </div>
