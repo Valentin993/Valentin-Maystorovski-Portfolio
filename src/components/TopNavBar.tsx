@@ -31,7 +31,9 @@ export default function TopNavBar({ activeView, onViewChange }: TopNavBarProps) 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
+        mobileMenuOpen
+          ? 'py-4 bg-black border-b border-white/5'
+          : isScrolled
           ? 'py-4 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5'
           : 'py-6 bg-transparent border-b border-transparent'
       }`}
@@ -108,7 +110,7 @@ export default function TopNavBar({ activeView, onViewChange }: TopNavBarProps) 
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[65px] bg-[#0a0a0a] z-40 flex flex-col px-6 py-12 gap-8 border-t border-white/5 animate-fade-in md:hidden">
+        <div className="fixed inset-0 top-[65px] bg-black z-40 flex flex-col px-6 py-12 gap-8 border-t border-white/5 animate-fade-in md:hidden">
           <button
             onClick={() => handleNavClick('home')}
             className={`text-left font-display text-3xl font-light tracking-tight pb-3 border-b border-white/5 cursor-pointer ${
@@ -132,15 +134,6 @@ export default function TopNavBar({ activeView, onViewChange }: TopNavBarProps) 
             }`}
           >
             Projects
-          </button>
-
-          <button
-            onClick={() => handleNavClick('contact')}
-            className={`text-left font-display text-3xl font-light tracking-tight pb-3 border-b border-white/5 cursor-pointer ${
-              activeView === 'contact' ? 'text-[#c9c6c5]' : 'text-[#a1a1aa]'
-            }`}
-          >
-            Contact
           </button>
 
           <button

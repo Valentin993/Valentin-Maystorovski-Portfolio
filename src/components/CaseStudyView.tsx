@@ -240,7 +240,7 @@ export default function CaseStudyView({ projectKey, onBack }: CaseStudyViewProps
       {/* Back to Case Studies trigger */}
       <section className="py-20 text-center border-t border-white/5">
         <p className="font-sans text-xs font-semibold text-[#a1a1aa] tracking-widest uppercase mb-4">
-          Finished viewing this study?
+          Finished viewing this project?
         </p>
         <button
           onClick={() => onBack('home', 'projects-section')}

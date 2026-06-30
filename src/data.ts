@@ -66,7 +66,7 @@ export const PROJECT_TEASERS: ProjectTeaser[] = [
   {
     id: 'iron-and-ember',
     title: 'IRON & EMBER',
-    category: 'Hospitality Design / 2024',
+    category: 'Hospitality Design',
     description: 'A premium industrial-chic burger identity, blending raw architectural elements with sophisticated brand materials for a high-end culinary experience.',
     imageSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB-Qb5y01lkc5vNIBWoD8XwEi1k0imhZSvzY38_OLtdfyJnecS0eG5vQ4uxV17ix4Qc9ZIe5ebvw-NvGO5tHAgt19b1LuNEJ2ho3Snfeft7GMfk5TKVg3xjzNcI_LzG3Bim84l8AqndvvpblpnSLLFEWYRq8UQmNw_eCWuMq56IAAcP5kZ2GcKj-ABC5SvqBrkZ13lcP162omZU54csoN3jwWxzrEFtPWJe4MGkSIK0xon8CLzIUbhrj4Qkwrx2O7o_LYMY0ivRBDFQ'
   }
