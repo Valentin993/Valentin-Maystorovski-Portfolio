@@ -169,7 +169,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     narrative: "Modern minimalist cocktail bar identity named SPECTRUM. The aesthetic is minimal, elegant, and timeless with refined typography and subtle Art Deco influences. We aimed to create a visual language that speaks to the elite, focusing on the interplay between light and shadow—much like the spectrum of colors found in a perfectly poured drink.",
     tags: ['Luxury', 'Berlin', 'Art Deco'],
     showcaseImage: spectrumGoldFoilIdentity,
-    showcaseLabelUrl: '#',
+    showcaseLabelUrl: 'https://spectrum-cocktails.vercel.app/',
     showcaseSubtitle: 'High-texture paper with gold-foil finish',
     philosophyTitle: 'Structural Minimalism.',
     philosophyText: "Every curve in the Spectrum logo is calculated to match the golden ratio, ensuring a balanced presence across both digital displays and embossed leather menus. We prioritized the 'S' glyph as a structural anchor that feels both architectural and organic.",
