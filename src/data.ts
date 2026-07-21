@@ -89,7 +89,7 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     narrative: "The intersection of fire-based cooking and architectural precision defines the Iron & Ember ethos. Every interaction, from the tactile weight of the menu to the scent of aged oak in the air, was meticulously calibrated to reflect the 'Crafted by Fire' narrative.",
     tags: ['Gourmet', 'Industrial', 'Architectural'],
     showcaseImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDCpwb94ADWRKb3pf6Thp9iLqFDeLbSSF_JCDkGasbNm0kXwLV0rJ8C1vdOtBDQzPezrGwBTzV6rkaTTzBjhWMv7LI67MbP6rI8n1D94k3AmJ0TfAZYhqIuFvXSnoDUofIrVYHPNDPy1f7WO6r5m9DhYcRhA7ezyNzmTJsMsNOEmiiWcd4MUKXRxl7JRXZ7QZP5K4BevMB46BeYPyZAfSg5iTobu9nchR9g4WwUwIT4o67oY3f9tBRimSOoq_T3CjGw3MfppRVgoeWr',
-    showcaseLabelUrl: '#',
+    showcaseLabelUrl: 'https://burger-iron-ember.vercel.app/',
     showcaseSubtitle: 'Matte Iron & Ember packaging with hand-pressed gold foil details',
     philosophyTitle: 'Structural Flavor.',
     philosophyText: "Every element of the Iron & Ember identity is built on a foundation of structural integrity—from the custom typography to the raw materials used in the physical space. Concrete, steel, and fire aren't just materials; they are our ingredients.",
