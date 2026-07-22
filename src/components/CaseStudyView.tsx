@@ -152,6 +152,12 @@ export default function CaseStudyView({ projectKey, onBack }: CaseStudyViewProps
                 href={caseStudy.showcaseLabelUrl}
                 target={caseStudy.showcaseLabelUrl.startsWith('http') ? '_blank' : undefined}
                 rel={caseStudy.showcaseLabelUrl.startsWith('http') ? 'noopener noreferrer' : undefined}
+                onClick={(e) => {
+                  if (caseStudy.showcaseLabelUrl && caseStudy.showcaseLabelUrl.startsWith('http')) {
+                    e.preventDefault();
+                    window.open(caseStudy.showcaseLabelUrl, '_blank', 'noopener,noreferrer');
+                  }
+                }}
                 className="absolute bottom-8 right-8 z-10 bg-[#e5e2e1] text-[#131313] hover:bg-[#c9c6c5] font-sans text-xs font-semibold px-6 py-3.5 uppercase tracking-widest transition-all duration-300 rounded flex items-center gap-2 group/btn cursor-pointer shadow-lg active:scale-95"
               >
                 VIEW WEBPAGE
