@@ -49,13 +49,23 @@ export default function CaseStudyView({ projectKey, onBack }: CaseStudyViewProps
         </span>
       );
     }
-    // Spectrum
-    return (
-      <span>
-        "Creating a space where light becomes the{' '}
-        <span className="italic text-[#a1a1aa] font-medium font-serif underline decoration-white/10 decoration-wavy underline-offset-8 font-light">main ingredient</span>."
-      </span>
-    );
+    if (caseStudy.id === 'spectrum') {
+      return (
+        <span>
+          "Creating a space where light becomes the{' '}
+          <span className="italic text-[#a1a1aa] font-medium font-serif underline decoration-white/10 decoration-wavy underline-offset-8 font-light">main ingredient</span>."
+        </span>
+      );
+    }
+    if (caseStudy.id === 'kraftwerk') {
+      return (
+        <span>
+          "Built to conquer alpine trails and push{' '}
+          <span className="italic text-[#a1a1aa] font-medium font-serif underline decoration-white/10 decoration-wavy underline-offset-8 font-light">electric performance</span> beyond conventional limits."
+        </span>
+      );
+    }
+    return <span>"{caseStudy.quote}"</span>;
   };
 
   return (

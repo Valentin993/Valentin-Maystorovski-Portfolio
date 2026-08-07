@@ -1,4 +1,4 @@
-export type ViewState = 'home' | 'iron-and-ember' | 'rare-void' | 'spectrum' | 'contact';
+export type ViewState = 'home' | 'iron-and-ember' | 'rare-void' | 'spectrum' | 'kraftwerk' | 'contact';
 
 export interface ProjectTeaser {
   id: ViewState;

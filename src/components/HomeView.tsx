@@ -238,6 +238,36 @@ export default function HomeView({ onViewChange }: HomeViewProps) {
               View Project <ArrowRight size={14} />
             </button>
           </div>
+
+          {/* Project 4 (Kraftwerk - Full Bleed) */}
+          <div className="md:col-span-12 group cursor-pointer mt-10 md:mt-20" onClick={() => onViewChange('kraftwerk')}>
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden mb-8 rounded-lg border border-white/5 bg-[#131313]">
+              <img
+                alt="Kraftwerk project teaser image"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter grayscale contrast-[1.1]"
+                src={PROJECT_TEASERS[3].imageSrc}
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent"></div>
+            </div>
+            
+            <div className="flex flex-col md:flex-row md:justify-between items-start gap-6">
+              <div className="max-w-xl">
+                <span className="font-sans text-xs font-semibold text-[#c9c6c5] uppercase tracking-widest mb-3 block">
+                  {PROJECT_TEASERS[3].category}
+                </span>
+                <h3 className="font-display text-3xl font-semibold text-[#e5e2e1] group-hover:italic transition-all duration-300">
+                  {PROJECT_TEASERS[3].title}
+                </h3>
+                <p className="font-sans text-sm text-[#a1a1aa] mt-2 leading-relaxed">
+                  {PROJECT_TEASERS[3].description}
+                </p>
+              </div>
+              <button className="flex items-center gap-3 font-sans text-xs font-semibold uppercase tracking-widest py-2 border-b border-white/20 hover:border-[#c9c6c5] hover:text-[#c9c6c5] text-[#e5e2e1] transition-all whitespace-nowrap cursor-pointer">
+                View Project <ArrowRight size={14} />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 

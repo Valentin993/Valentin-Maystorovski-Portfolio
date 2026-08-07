@@ -10,6 +10,12 @@ import spectrumDesignPhilosophy from './assets/images/spectrum_philosophy_refine
 import spectrumMaterialsBar from './assets/images/spectrum_materials_bar_1782687249229.jpg';
 import ironEmberTactile from './assets/images/iron_ember_tactile_1782088830715.jpg';
 import ironEmberBurgerInterface from './assets/images/iron_ember_burger_interface_1782089084022.jpg';
+import kraftwerkEmtbHero from './assets/images/kraftwerk_emtb_clean_1786131345401.jpg';
+import kraftwerkPhilosophyDetail from './assets/images/kraftwerk_philosophy_detail_1786131585566.jpg';
+import kraftwerkCockpitTelemetry from './assets/images/kraftwerk_cockpit_telemetry_1786131733407.jpg';
+import kraftwerkOffroadDominance from './assets/images/kraft01_offroad_action_v3_1786133390017.jpg';
+import kraftwerkBrandingSynthesis from './assets/images/kraftwerk_branding_synthesis_en_1786132329521.jpg';
+import kraftwerkKraft01Showcase from './assets/images/kraftwerk_branding_synthesis_v2_1786133552941.jpg';
 
 export const SERVICE_ITEMS: ServiceItem[] = [
   {
@@ -69,6 +75,13 @@ export const PROJECT_TEASERS: ProjectTeaser[] = [
     category: 'Hospitality Design',
     description: 'A premium industrial-chic burger identity, blending raw architectural elements with sophisticated brand materials for a high-end culinary experience.',
     imageSrc: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB-Qb5y01lkc5vNIBWoD8XwEi1k0imhZSvzY38_OLtdfyJnecS0eG5vQ4uxV17ix4Qc9ZIe5ebvw-NvGO5tHAgt19b1LuNEJ2ho3Snfeft7GMfk5TKVg3xjzNcI_LzG3Bim84l8AqndvvpblpnSLLFEWYRq8UQmNw_eCWuMq56IAAcP5kZ2GcKj-ABC5SvqBrkZ13lcP162omZU54csoN3jwWxzrEFtPWJe4MGkSIK0xon8CLzIUbhrj4Qkwrx2O7o_LYMY0ivRBDFQ'
+  },
+  {
+    id: 'kraftwerk',
+    title: 'KRAFTWERK',
+    category: 'E-Mobility & E-MTB Shop',
+    description: 'A high-performance German E-MTB store experience, combining precision electric engineering, brutalist design aesthetics, and interactive trail customization.',
+    imageSrc: kraftwerkEmtbHero
   }
 ];
 
@@ -190,6 +203,46 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
         title: 'SPATIAL',
         subtitle: 'Cinematic visual rendering celebrating ambient light and dynamic shadow.',
         imageSrc: spectrumSpatialUrban
+      }
+    ]
+  },
+  'kraftwerk': {
+    id: 'kraftwerk',
+    title: 'KRAFTWERK',
+    heroCategory: 'PROJECT CASE',
+    tagline: 'High-performance E-MTB brand & digital store experience built for extreme terrain, brutalist industrial design, and electric precision.',
+    heroImage: kraftwerkEmtbHero,
+    deliverables: [
+      'E-Commerce Experience',
+      'Brand Identity & Systems',
+      'Interactive Bike Configurator',
+      'Digital Strategy'
+    ],
+    headline: 'Unfiltered Torque & German Precision',
+    narrative: "KRAFTWERK is an elite E-MTB brand born in the Bavarian Alps, engineered for riders who demand raw power, structural endurance, and brutalist aesthetics on mountain trails. We designed a direct-to-consumer digital portal for the flagship KRAFT 01 model featuring real-time bike customization, technical specs telemetry, and an aggressive, dark-mode visual language that mirrors the raw energy of high-voltage off-road cycling.",
+    tags: ['E-Mobility', 'E-MTB', 'German Engineering'],
+    showcaseImage: kraftwerkKraft01Showcase,
+    showcaseLabelUrl: 'https://kraftwerk-e-mtb-shop.vercel.app/',
+    showcaseSubtitle: 'Interactive KRAFT 01 digital store with real-time configurator',
+    philosophyTitle: 'High-Voltage Engineering.',
+    philosophyText: "Every angle of the Kraftwerk identity reflects heavy-duty hydroformed aluminum, high-density carbon fiber, and industrial minimalism. By stripping away superfluous fluff, we created a store experience as robust and direct as the bikes themselves.",
+    philosophyImage: kraftwerkPhilosophyDetail,
+    quote: "Built to conquer alpine trails and push electric performance beyond conventional limits.",
+    gallery: [
+      {
+        title: 'HYDROFORMED FRAME',
+        subtitle: 'Structural alloy architecture & integrated high-capacity battery housing',
+        imageSrc: kraftwerkPhilosophyDetail
+      },
+      {
+        title: 'TELEMETRY COCKPIT',
+        subtitle: 'Real-time motor tuning & custom suspension response configuration',
+        imageSrc: kraftwerkCockpitTelemetry
+      },
+      {
+        title: 'OFF-ROAD DOMINANCE',
+        subtitle: 'Instant electric motor torque across aggressive alpine gradients',
+        imageSrc: kraftwerkOffroadDominance
       }
     ]
   }

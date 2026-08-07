@@ -123,6 +123,22 @@ export default function App() {
             </motion.div>
           )}
 
+          {activeView === 'kraftwerk' && (
+            <motion.div
+              key="kraftwerk"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              className="w-full"
+            >
+              <CaseStudyView
+                projectKey="kraftwerk"
+                onBack={(view, sectionId) => handleViewChange(view, sectionId)}
+              />
+            </motion.div>
+          )}
+
           {activeView === 'contact' && (
             <motion.div
               key="contact"
